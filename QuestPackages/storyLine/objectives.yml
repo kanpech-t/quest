@@ -1,2 +1,4 @@
 objectives:
+  locationAllSpawn: stage locationFishSpot,locationUpgradeSpot
   locationFishSpot: location -3287;12;1168;spawn 5 events:fishLocationDone
+  locationUpgradeSpot: location -3236;-3;1262;spawn 5 events:weaponLocationDone
