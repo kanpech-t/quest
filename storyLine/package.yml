@@ -1,0 +1,9 @@
+npc:
+  # bank npc
+  "11": "Jack"
+  # leader board npc
+  "9": "Irisia"
+
+items:
+  steak: "COOKED_BEEF"
+  cod: "COD"

@@ -1,0 +1,21 @@
+conversations:
+  Jack:
+    quester: "Jack"
+    first: "firstGreeting"
+    NPC_options:
+      firstGreeting:
+        text: "สวัสดีมีอะไรให้ผมช่วยไหม"
+        pointer: "useBank"
+      howUseBank:
+        text: "ธนาคารไว้ใช้------ หลังจากนายคุยกับฉันเสร็จนายสามารถคลิกขวาที่ตัวฉันได้"
+
+    player_options:
+      useBank:
+        text: "ธนาคารนี้ใช้ยังไงหรอ"
+        pointer: "howUseBank"
+      smallIsland:
+        text: "From a small island located east."
+        pointer: "islandAnswer"
+      bigCity:
+        text: "From a big city located west."
+        pointer: "cityAnswer"
