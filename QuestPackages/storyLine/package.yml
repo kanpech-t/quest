@@ -8,3 +8,17 @@ npcs:
 items:
   steak: "COOKED_BEEF"
   cod: "COD"
+  enchantment_book:
+    item: WRITTEN_BOOK
+    title: Enchantments_Guide
+    author: &eSage_of_Enchantments
+    text: >
+      Introduction: This_book_provides_information_about_various_enchantments_and_their_properties.\n
+      \n
+      Sharpness: Increases_melee_damage.\n
+      Efficiency: Increases_block_breaking_speed.\n
+      Fortune: Increases_block_drops_when_mining.\n
+      Unbreaking: Increases_durability.\n
+      Looting: Increases_drops_from_mobs.\n
+      \n
+      ...|Additional_information_about_other_enchantments_can_be_found_in_the_encyclopedia.
