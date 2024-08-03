@@ -6,7 +6,7 @@ menus:
     command: "/tutorialMenu"
     slots:
       0-3: "filler,filler,filler,filler"
-      4: "filler"
+      4: "reputation"
       5-8: "filler,filler,filler,filler"
       9: "fishLocationQuestActive,fishLocationQuestDone"
       10: "upgradeLocationQuestActive,upgradeLocationQuestDone"
@@ -52,13 +52,19 @@ menus:
       filler:
         text: "&a "
         item: "filler"
+      reputation:
+        item: "xpBottle"
+        amount: 1
+        text:
+          - "&2Quest Level: &6&l%point.quest_reputation.amount%"
+        close: true
 
 events:
   locationFishNotify: "notify &c ที่ตกปลาอยู่ที่  x -3287 y 12 z 1168"
   locationUpgradeNotify: "notify &c ที่อัพเกรดอยู่ที่   x -3236 y -3 z 1262;"
 items:
   openMenuItem: "BOOK title:Quests"
-
+  xpBottle: "EXPERIENCE_BOTTLE"
   filler: "GRAY_STAINED_GLASS_PANE"
   fishActiveItem: "COD"
   questDone: "LIME_CONCRETE"
