@@ -2,7 +2,9 @@ events:
   bankCommand: command gui openfor  %player% bank
   addBankTutorialSuccessTag: "tag add bankTutorialSuccess"
 
-  tutorialStart: objective add locationFishSpot,locationUpgradeSpot
+  tutorialStart: folder tutorialObjectAdd,giveTutorialBook
+  tutorialObjectAdd: objective add locationFishSpot,locationUpgradeSpot
+  giveTutorialBook: give tutorialBook
 
   tutorialReward: folder giveReward,addAlreadyGetRewardTag
   giveReward: give steak:32
