@@ -1,0 +1,22 @@
+conversations:
+  "Newbie Adviser":
+    quester: "Newbie Adviser"
+    first: tutorialDone,firstGreeting
+    NPC_options:
+      firstGreeting:
+        text: "สวัสดีนายคงจะมาใหม่ใช่ไหม ต้องการรู้จักเมืองนี้ให้มากขึ้นไหม"
+        pointer: "yes,no"
+      tutorialStart:
+        text: "ลองไปที่ตามที่ฉันเขียนไว้ในหนังสือนี่นะ  (คลิกขวาเพื่อเปิด) ถ้าไปครบแล้วอย่าลืมกลับมารับของนะ"
+        events: tutorialStart
+      tutorialDone:
+        text: นี่ของ
+        events: give steak 32
+        conditions: isLocateAllLocation
+
+    player_options:
+      yes:
+        text: "แน่นอน"
+        pointer: "tutorialStart"
+      no:
+        text: "ไม่ตอนนี้ยังขี้เกียจ"

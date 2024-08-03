@@ -1,4 +1,5 @@
 npcs:
+  "3": "Newbie Adviser"
   # bank npc
   "21": "Jack"
   # leader board npc
