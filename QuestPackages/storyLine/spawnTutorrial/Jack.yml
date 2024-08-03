@@ -1,13 +1,17 @@
 conversations:
   Jack:
     quester: "Jack"
-    first: "firstGreeting"
+    first: bankSuccess,firstGreeting
     NPC_options:
+      bankSuccess:
+        events: bankCommand
+        conditions: hasBankTutorialSuccess
       firstGreeting:
         text: "สวัสดีมีอะไรให้ผมช่วยไหม"
         pointer: "useBank"
       howUseBank:
         text: "ธนาคารไว้ใช้------ หลังจากนายคุยกับฉันเสร็จนายสามารถคลิกขวาที่ตัวฉันได้"
+        events: addBankTutorialSuccessTag
 
     player_options:
       useBank:

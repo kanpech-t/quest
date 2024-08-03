@@ -1,0 +1,3 @@
+events:
+  bankCommand: command warps
+  addBankTutorialSuccessTag: "tag add bankTutorialSuccess"
