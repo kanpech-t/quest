@@ -9,7 +9,7 @@ menus:
       4: "filler"
       5-8: "filler,filler,filler,filler"
       9: "fishLocationQuestActive,fishLocationQuestDone"
-      10: "filler"
+      10: "upgradeLocationQuestActive,upgradeLocationQuestDone"
       27-35: "filler,filler,filler,filler,filler,filler,filler,filler,filler"
 
     items:
@@ -21,7 +21,7 @@ menus:
           - "&7[Quest] &f&lไปที่ตกปลา"
           - "&eคลิกซ้ายเพื่อดูตำแหน่ง"
         click:
-          left: "locationNotify"
+          left: "locationFishNotify"
         close: true
       fishLocationQuestDone:
         item: "questDone"
@@ -31,18 +31,35 @@ menus:
           - "&2[Quest] &f&lไปที่ตกปลา"
           - "&f&oเสร็จแล้ว!"
         close: false
+      upgradeLocationQuestActive:
+        item: "upgradeActiveItem"
+        amount: 1
+        conditions: "!isWeaponLocationDone"
+        text:
+          - "&2[Quest] &f&lไปอัพเกรดอาวุธ"
+          - "&eคลิกซ้ายเพื่อดูตำแหน่ง"
+        click:
+          left: "locationUpgradeNotify"
+        close: false
+      upgradeLocationQuestDone:
+        item: "questDone"
+        amount: 1
+        conditions: "isWeaponLocationDone"
+        text:
+          - "&2[Quest] &f&lไปอัพเกรดอาวุธ"
+          - "&f&oเสร็จแล้ว!"
+        close: false
       filler:
         text: "&a "
         item: "filler"
 
 events:
-  locationNotify: "notify &c ที่ตกปลาอยู่ที่  -3287;12;1168"
+  locationFishNotify: "notify &c ที่ตกปลาอยู่ที่  x:-3287 y:12 z:1168"
+  locationUpgradeNotify: "notify &c ที่อัพเกรดอยู่ที่   x:-3236 y:-3 z:1262;"
 items:
   openMenuItem: "BOOK title:Quests"
 
-  xpBottle: "EXPERIENCE_BOTTLE"
   filler: "GRAY_STAINED_GLASS_PANE"
-
   fishActiveItem: "COD"
-  goldQuestActiveItem: "RAW_GOLD"
   questDone: "LIME_CONCRETE"
+  upgradeActiveItem: "BLAZE_POWDER"
