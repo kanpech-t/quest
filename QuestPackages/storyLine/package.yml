@@ -8,4 +8,4 @@ npcs:
 items:
   steak: "COOKED_BEEF"
   cod: "COD"
-  enchantment_book: "WRITTEN_BOOK title: Enchantments_Guide author: &eSage_of_Enchantments"
+  tutorialBook: "BOOK name:spawnTourBook lore:หนังสือสำหรับเดินเล่นรอบspawn  enchants:UNBREAKING:3+"
