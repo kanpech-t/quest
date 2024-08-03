@@ -4,6 +4,7 @@ conversations:
     first: bankSuccess,firstGreeting
     NPC_options:
       bankSuccess:
+        text: เปิดธนาคาร
         events: bankCommand
         conditions: hasBankTutorialSuccess
       firstGreeting:
