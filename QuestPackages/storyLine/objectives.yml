@@ -1,2 +1,2 @@
 objectives:
-  locationFishSpot: location -3287;12;1168;spawn range:5 events:fishLocationDone
+  locationFishSpot: location -3287;12;1168;spawn 5 events:fishLocationDone
