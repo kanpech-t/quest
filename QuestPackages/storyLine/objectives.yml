@@ -1,2 +1,2 @@
 objectives:
-  stepFishSpot: step -3286;12;1168;spawn range:3 events:fishSpotDone
+  stepFishSpot: step -3286;12;1168;spawn  events:fishSpotDone
