@@ -4,6 +4,10 @@ events:
 
   tutorialStart: objective add locationFishSpot,locationUpgradeSpot
 
+  tutorialReward: folder giveReward,addAlreadyGetRewardTag
+  giveReward: give steak:32
+  addAlreadyGetRewardTag: tag add alreadyGetReward
+
   # location
   fishDone: folder addFishLocationDone,fishLocationDone,allDone period:1.5
   addFishLocationDone: tag add fishLocationDone

@@ -11,8 +11,11 @@ conversations:
         events: tutorialStart
       tutorialDone:
         text: นี่ของ
-        events: give steak 32
+        events: tutorialReward
         conditions: isLocateAllLocation
+      GoodLuck:
+        text: "โชคดีนะ"
+        conditions: isAddAlreadyGetRewardTag
 
     player_options:
       yes:
