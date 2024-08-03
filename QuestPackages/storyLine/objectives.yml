@@ -1,3 +1,3 @@
 objectives:
-  locationFishSpot: location -3287;12;1168;spawn 5 events:fishDone
-  locationUpgradeSpot: location -3236;-3;1262;spawn 5 events:weaponDone
+  locationFishSpot: location -3287;12;1168;spawn 5 events:multipleFishEvent
+  locationUpgradeSpot: location -3236;-3;1262;spawn 5 events:multipleWeaponEvent
