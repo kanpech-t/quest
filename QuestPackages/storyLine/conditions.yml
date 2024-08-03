@@ -1,2 +1,6 @@
 conditions:
+  isLocateAllLocation: and isFishLocationDone,isWeaponLocationDone
+  isFishLocationDone: tag fishLocationDone
+  isWeaponLocationDone: tag weaponLocationDone
+
   hasBankTutorialSuccess: "tag bankTutorialSuccess"
