@@ -1,0 +1,48 @@
+menus:
+  questMenu:
+    height: 4
+    title: "&6&lQuests"
+    bind: "tutorialBook"
+    command: "/tutorialMenu"
+    slots:
+      0-3: "filler,filler,filler,filler"
+      4: "filler"
+      5-8: "filler,filler,filler,filler"
+      9: "fishLocationQuestActive,fishLocationQuestDone"
+      10: "filler"
+      27-35: "filler,filler,filler,filler,filler,filler,filler,filler,filler"
+
+    items:
+      fishLocationQuestActive:
+        item: "fishActiveItem"
+        amount: 1
+        conditions: "!isFishLocationDone"
+        text:
+          - "&7[Quest] &f&lไปที่ตกปลา"
+          - "&eคลิกซ้ายเพื่อดูตำแหน่ง"
+        click:
+          left: "locationNotify"
+        close: true
+      fishLocationQuestDone:
+        item: "questDone"
+        amount: 1
+        conditions: "isFishLocationDone"
+        text:
+          - "&2[Quest] &f&lไปที่ตกปลา"
+          - "&f&oเสร็จแล้ว!"
+        close: false
+      filler:
+        text: "&a "
+        item: "filler"
+
+events:
+  locationNotify: "notify &c ที่ตกปลาอยู่ที่  -3287;12;1168"
+items:
+  openMenuItem: "BOOK title:Quests"
+
+  xpBottle: "EXPERIENCE_BOTTLE"
+  filler: "GRAY_STAINED_GLASS_PANE"
+
+  fishActiveItem: "COD"
+  goldQuestActiveItem: "RAW_GOLD"
+  questDone: "LIME_CONCRETE"
