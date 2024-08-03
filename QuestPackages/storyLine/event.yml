@@ -11,4 +11,4 @@ events:
   weaponLocationDone: notify ท่านได้มาที่จุดอัพเกรดอาวุธแล้ว io:Title sound:entity.player.levelup
   addWeaponLocationDone: tag add weaponLocationDone
 
-  allDone: notify ท่านได้มาทุกจุดแล้วกลับไปรับของไดที่... io:advancement frame:challenge  icon:minecraft:map sound:entity.player.levelup condition:isLocateAllLocation
+  allDone: notify ท่านได้มาทุกจุดแล้วกลับไปรับของไดที่... io:Advancement frame:challenge icon:minecraft:map sound:entity.player.levelup condition:isLocateAllLocation
