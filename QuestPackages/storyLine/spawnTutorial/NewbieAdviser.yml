@@ -5,7 +5,7 @@ conversations:
     NPC_options:
       firstGreeting:
         text: "สวัสดีนายคงจะมาใหม่ใช่ไหม ต้องการรู้จักเมืองนี้ให้มากขึ้นไหม"
-        pointer: "yes,no"
+        pointer: yes,no
       tutorialStart:
         text: "ลองไปที่ตามที่ฉันเขียนไว้ในหนังสือนี่นะ  (คลิกขวาเพื่อเปิด) ถ้าไปครบแล้วอย่าลืมกลับมารับของนะ"
         events: tutorialStart
