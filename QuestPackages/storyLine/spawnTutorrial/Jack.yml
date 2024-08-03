@@ -4,7 +4,7 @@ conversations:
     first: bankSuccess,firstGreeting
     NPC_options:
       bankSuccess:
-        events: bankCommand
+        events: delayOpenWarp
         conditions: hasBankTutorialSuccess
       firstGreeting:
         text: "สวัสดีมีอะไรให้ผมช่วยไหม"

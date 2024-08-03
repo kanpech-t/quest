@@ -1,3 +1,4 @@
 events:
+  delayOpenWarp: folder bankCommand delay:0.5
   bankCommand: command warps
   addBankTutorialSuccessTag: "tag add bankTutorialSuccess"
