@@ -17,4 +17,4 @@ events:
   weaponLocationDone: notify ท่านได้มาที่จุดอัพเกรดอาวุธแล้ว io:title sound:entity.player.levelup
   addWeaponLocationDone: tag add weaponLocationDone
 
-  allDone: notify ไปครบทุทแลวกลับไปหา.... io:title condition:isLocateAllLocation sound:entity.player.levelup
+  allDone: notify ไปครบทุทแลวกลับไปหา Newbie Adviser io:title condition:isLocateAllLocation sound:entity.player.levelup
