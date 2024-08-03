@@ -1,6 +1,6 @@
-npc:
+npcs:
   # bank npc
-  "20": "Jack"
+  "11": "Jack"
   # leader board npc
   "9": "Irisia"
 
