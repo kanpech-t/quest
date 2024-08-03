@@ -1,11 +1,11 @@
 conversations:
   "Newbie Adviser":
     quester: "Newbie Adviser"
-    first: tutorialDone,firstGreeting
+    first: goodLuck,tutorialDone,firstGreeting
     NPC_options:
       firstGreeting:
         text: "สวัสดีนายคงจะมาใหม่ใช่ไหม ต้องการรู้จักเมืองนี้ให้มากขึ้นไหม"
-        pointer: yes,no
+        pointer: yesIWant,noIDont
       tutorialStart:
         text: "ลองไปที่ตามที่ฉันเขียนไว้ในหนังสือนี่นะ  (คลิกขวาเพื่อเปิด) ถ้าไปครบแล้วอย่าลืมกลับมารับของนะ"
         events: tutorialStart
@@ -13,13 +13,13 @@ conversations:
         text: นี่ของ
         events: tutorialReward
         conditions: isLocateAllLocation
-      GoodLuck:
+      goodLuck:
         text: "โชคดีนะ"
         conditions: isAddAlreadyGetRewardTag
 
     player_options:
-      yes:
+      yesIWant:
         text: "แน่นอน"
         pointer: "tutorialStart"
-      no:
+      noIDont:
         text: "ไม่ตอนนี้ยังขี้เกียจ"
