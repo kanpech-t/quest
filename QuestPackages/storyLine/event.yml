@@ -3,12 +3,12 @@ events:
   addBankTutorialSuccessTag: "tag add bankTutorialSuccess"
 
   # location
-  fishDone: folder addFishLocationDone,fishLocationDone,allDone period:2
+  fishDone: folder addFishLocationDone,fishLocationDone,allDone period:1.5
   addFishLocationDone: tag add fishLocationDone
-  fishLocationDone: notify ท่านได้มาที่จุดตกปลาแล้ว io:Title sound:entity.firework_rocket.blast
+  fishLocationDone: notify ท่านได้มาที่จุดตกปลาแล้ว io:Title sound:entity.player.levelup
 
-  weaponDone: folder addWeaponLocationDone,weaponLocationDone,allDone period:2
-  weaponLocationDone: notify ท่านได้มาที่จุดอัพเกรดอาวุธแล้ว io:Title sound:entity.firework_rocket.blast
+  weaponDone: folder addWeaponLocationDone,weaponLocationDone,allDone period:1.5
+  weaponLocationDone: notify ท่านได้มาที่จุดอัพเกรดอาวุธแล้ว io:Title sound:entity.player.levelup
   addWeaponLocationDone: tag add weaponLocationDone
 
-  allDone: notify ท่านได้มาทุกจุดแล้วกลับไปรับของไดที่... io:Title sound:entity.firework_rocket.blastcondition:isLocateAllLocation
+  allDone: notify ท่านได้มาทุกจุดแล้วกลับไปรับของไดที่... io:advancement  sound:entity.player.levelup condition:isLocateAllLocation
