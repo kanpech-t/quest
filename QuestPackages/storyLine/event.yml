@@ -8,7 +8,7 @@ events:
   fishDone: if isLocateAllLocation allDone else fishLocationDone
   fishLocationDone: notify ท่านได้มาที่จุดตกปลาแล้ว io:Title sound:firework_rocket
 
-  multipleWeaponEvent: folder weaponLocationDone,weaponDone
+  multipleWeaponEvent: folder addWeaponLocationDone,weaponDone
   weaponDone: if isLocateAllLocation allDone else weaponLocationDone
   weaponLocationDone: notify ท่านได้มาที่จุดอัพเกรดอาวุธแล้ว io:Title sound:firework_rocket
   addWeaponLocationDone: tag add weaponLocationDone
