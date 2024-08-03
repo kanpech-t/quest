@@ -40,7 +40,7 @@ menus:
           - "&eคลิกซ้ายเพื่อดูตำแหน่ง"
         click:
           left: "locationUpgradeNotify"
-        close: false
+        close: true
       upgradeLocationQuestDone:
         item: "questDone"
         amount: 1
@@ -54,8 +54,8 @@ menus:
         item: "filler"
 
 events:
-  locationFishNotify: "notify &c ที่ตกปลาอยู่ที่  x:-3287 y:12 z:1168"
-  locationUpgradeNotify: "notify &c ที่อัพเกรดอยู่ที่   x:-3236 y:-3 z:1262;"
+  locationFishNotify: "notify &c ที่ตกปลาอยู่ที่  x -3287 y 12 z 1168"
+  locationUpgradeNotify: "notify &c ที่อัพเกรดอยู่ที่   x -3236 y -3 z 1262;"
 items:
   openMenuItem: "BOOK title:Quests"
 
