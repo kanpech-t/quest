@@ -5,10 +5,10 @@ events:
   # location
   fishDone: folder addFishLocationDone,fishLocationDone,allDone period:1.5
   addFishLocationDone: tag add fishLocationDone
-  fishLocationDone: notify ท่านได้มาที่จุดตกปลาแล้ว io:Title sound:entity.player.levelup
+  fishLocationDone: notify ท่านได้มาที่จุดตกปลาแล้ว io:title sound:entity.player.levelup
 
   weaponDone: folder addWeaponLocationDone,weaponLocationDone,allDone period:1.5
-  weaponLocationDone: notify ท่านได้มาที่จุดอัพเกรดอาวุธแล้ว io:Title sound:entity.player.levelup
+  weaponLocationDone: notify ท่านได้มาที่จุดอัพเกรดอาวุธแล้ว io:title sound:entity.player.levelup
   addWeaponLocationDone: tag add weaponLocationDone
 
-  allDone: notify ท่านได้มาทุกจุดแล้วกลับไปรับของไดที่... io:Advancement frame:challenge icon:minecraft:map sound:entity.player.levelup condition:isLocateAllLocation
+  allDone: notify ไปครบทุทแลวกลับไปหา.... io:title condition:isLocateAllLocation sound:entity.player.levelup
