@@ -1,3 +1,4 @@
 events:
   bankCommand: command gui openfor  %player% bank
   addBankTutorialSuccessTag: "tag add bankTutorialSuccess"
+  fishSpotDone: notify ท่านได้มาที่จุดตกปลาแล้ว io:Title sound:firework_rocket
