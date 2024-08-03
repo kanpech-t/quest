@@ -1,7 +1,7 @@
 conditions:
   isLocateAllLocation: and isFishLocationDone,isWeaponLocationDone
 
-  isAddAlreadyGetRewardTag: tag addAlreadyGetRewardTag
+  isAddAlreadyGetRewardTag: tag alreadyGetReward
   isFishLocationDone: tag fishLocationDone
   isWeaponLocationDone: tag weaponLocationDone
 
