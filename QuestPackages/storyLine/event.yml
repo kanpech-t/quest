@@ -3,14 +3,14 @@ events:
   addBankTutorialSuccessTag: "tag add bankTutorialSuccess"
 
   # location
-  multipleFishEvent: folder addFishLocationDone,fishDone
+  multipleFishEvent: folder addFishLocationDone,fishLocationDone,fishDone period:1
   addFishLocationDone: tag add fishLocationDone
-  fishDone: if isLocateAllLocation allDone else fishLocationDone
-  fishLocationDone: notify ท่านได้มาที่จุดตกปลาแล้ว io:Title sound:firework_rocket
+  fishDone: if isLocateAllLocation allDone
+  fishLocationDone: notify ท่านได้มาที่จุดตกปลาแล้ว io:Title sound:block.anvil.use
 
-  multipleWeaponEvent: folder addWeaponLocationDone,weaponDone
-  weaponDone: if isLocateAllLocation allDone else weaponLocationDone
-  weaponLocationDone: notify ท่านได้มาที่จุดอัพเกรดอาวุธแล้ว io:Title sound:firework_rocket
+  multipleWeaponEvent: folder addWeaponLocationDone,weaponLocationDone,weaponDone period:1
+  weaponDone: if isLocateAllLocation allDone
+  weaponLocationDone: notify ท่านได้มาที่จุดอัพเกรดอาวุธแล้ว io:Title sound:block.anvil.use
   addWeaponLocationDone: tag add weaponLocationDone
 
-  allDone: notify ท่านได้มาทุกจุดแล้ว io:Title sound:firework_rocket
+  allDone: notify ท่านได้มาทุกจุดแล้วกลับไปรับของไดที่... io:Title sound:block.anvil.use
