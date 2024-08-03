@@ -13,9 +13,3 @@ conversations:
       useBank:
         text: "ธนาคารนี้ใช้ยังไงหรอ"
         pointer: "howUseBank"
-      smallIsland:
-        text: "From a small island located east."
-        pointer: "islandAnswer"
-      bigCity:
-        text: "From a big city located west."
-        pointer: "cityAnswer"
