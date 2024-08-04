@@ -1,6 +1,7 @@
 conditions:
   isLocateAllLocation: and isFishLocationDone,isWeaponLocationDone
 
+  isAcceptTutorialQuest: tag acceptTutorialQuest
   isAddAlreadyGetRewardTag: tag alreadyGetReward
   isFishLocationDone: tag fishLocationDone
   isWeaponLocationDone: tag weaponLocationDone

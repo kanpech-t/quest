@@ -1,7 +1,7 @@
 conversations:
   "Newbie Adviser":
     quester: "Newbie Adviser"
-    first: goodLuck,tutorialDone,firstGreeting
+    first: goodLuck,tutorialDone,tutorialInProgress,firstGreeting
     NPC_options:
       firstGreeting:
         text: "สวัสดีนายคงจะมาใหม่ใช่ไหม ต้องการรู้จักเมืองนี้ให้มากขึ้นไหม"
@@ -9,10 +9,17 @@ conversations:
       tutorialStart:
         text: "ลองไปที่ตามที่ฉันเขียนไว้ในหนังสือนี่นะ  (คลิกขวาเพื่อเปิด) ถ้าไปครบแล้วอย่าลืมกลับมารับของนะ"
         events: tutorialStart
+      tutorialInProgress:
+        text: มีอะไรให้ช่วยไหม
+        conditions: isAcceptTutorialQuest
+        pointer: lostBook,nothing
       tutorialDone:
-        text: นี่ของ
+        text: นี่ของ protect ขนาด 11*11
         events: tutorialReward
         conditions: isLocateAllLocation
+      giveNewBook:
+        text: นี่หนังสือใหม่นะ
+        events: giveTutorialBook
       goodLuck:
         text: "โชคดีนะ"
         conditions: isAddAlreadyGetRewardTag
@@ -23,3 +30,8 @@ conversations:
         pointer: "tutorialStart"
       noIDont:
         text: "ไม่ตอนนี้ยังขี้เกียจ"
+      lostBook:
+        text: ฉันทำหนังสือหาย
+        pointer: giveNewBook
+      nothing:
+        text: ไม่มีอะไร
