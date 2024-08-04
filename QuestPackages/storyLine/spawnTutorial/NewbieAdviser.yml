@@ -23,6 +23,8 @@ conversations:
       goodLuck:
         text: "ขอให้เป็นวันที่ดีนะ"
         conditions: isAddAlreadyGetRewardTag
+      goodDay:
+        text: "ขอให้เป็นวันที่ดีนะ"
 
     player_options:
       yesIWant:
@@ -30,10 +32,10 @@ conversations:
         pointer: "tutorialStart"
       noIDont:
         text: "ไม่ตอนนี้ยังขี้เกียจ"
-        pointer: goodLuck
+        pointer: goodDay
       lostBook:
         text: ฉันทำหนังสือหาย
         pointer: giveNewBook
       nothing:
         text: ไม่มีอะไร
-        pointer: goodLuck
+        pointer: goodDay
