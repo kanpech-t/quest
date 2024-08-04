@@ -56,7 +56,7 @@ menus:
         item: "xpBottle"
         amount: 1
         text:
-          - "&2Quest progress: &6&l%point.tutorialPoint.amount%"
+          - "&2Quest progress: &6&l%point.tutorialPoint.amount%/10"
         close: true
 
 events:
