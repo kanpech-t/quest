@@ -6,7 +6,7 @@ menus:
     command: "/tutorialMenu"
     slots:
       0-3: "filler,filler,filler,filler"
-      4: "reputation"
+      4: "reputation,reputationDone"
       5-8: "filler,filler,filler,filler"
       9: "fishLocationQuestActive,fishLocationQuestDone"
       10: "upgradeLocationQuestActive,upgradeLocationQuestDone"
@@ -55,9 +55,18 @@ menus:
       reputation:
         item: "xpBottle"
         amount: 1
+        conditions: "!isLocateAllLocation"
         text:
           - "&2Quest progress: &6&l%point.tutorialPoint.amount%/10"
         close: true
+      reputationDone:
+        item: "xpBottle"
+        amount: 1
+        conditions: isLocateAllLocation
+        text:
+          - "&2 กลับไปหา Newbie Adviser เพื่อรับจของรางวัล"
+          - ""
+        close: false
 
 events:
   locationFishNotify: "notify &c ที่ตกปลาอยู่ที่  x -3287 y 12 z 1168"
