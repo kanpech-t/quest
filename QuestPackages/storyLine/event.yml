@@ -11,12 +11,14 @@ events:
   addAlreadyGetRewardTag: tag add alreadyGetReward
 
   # location
-  fishDone: folder addFishLocationDone,fishLocationDone,allDone period:1.5
+  fishDone: folder fishLocationDone,addFishLocationDone,allDone,addTutorialPoint period:1.5
   addFishLocationDone: tag add fishLocationDone
   fishLocationDone: notify ท่านได้มาที่จุดตกปลาแล้ว io:title sound:entity.player.levelup
 
-  weaponDone: folder addWeaponLocationDone,weaponLocationDone,allDone period:1.5
+  weaponDone: folder weaponLocationDone,addWeaponLocationDone,allDone,addTutorialPoint period:1.5
   weaponLocationDone: notify ท่านได้มาที่จุดอัพเกรดอาวุธแล้ว io:title sound:entity.player.levelup
   addWeaponLocationDone: tag add weaponLocationDone
+
+  addTutorialPoint: point tutorialPoint 10 action:add
 
   allDone: notify ไปครบทุทแลวกลับไปหา Newbie Adviser io:title condition:isLocateAllLocation sound:entity.player.levelup
