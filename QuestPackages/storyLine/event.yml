@@ -7,7 +7,7 @@ events:
   giveTutorialBook: give tutorialBook
 
   tutorialReward: folder giveReward,addAlreadyGetRewardTag
-  giveReward: give steak:32
+  giveReward: command ps give 11 %player% 1
   addAlreadyGetRewardTag: tag add alreadyGetReward
 
   # location
