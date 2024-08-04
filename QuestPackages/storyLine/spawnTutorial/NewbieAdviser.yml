@@ -35,3 +35,4 @@ conversations:
         pointer: giveNewBook
       nothing:
         text: ไม่มีอะไร
+        pointer: goodLuck
