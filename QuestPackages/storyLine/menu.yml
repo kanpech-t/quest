@@ -64,8 +64,9 @@ menus:
         amount: 1
         conditions: isLocateAllLocation
         text:
-          - "&2 กลับไปหา Newbie Adviser เพื่อรับจของรางวัล"
-          - ""
+          - "&2Quest Done:"
+          - "&eกลับไปหา Newbie Adviser เพื่อรับของรางวัล"
+
         close: false
 
 events:
