@@ -21,7 +21,7 @@ conversations:
         text: นี่หนังสือใหม่นะ
         events: giveTutorialBook
       goodLuck:
-        text: "โชคดีนะ"
+        text: "ขอให้เป็นวันที่ดีนะ"
         conditions: isAddAlreadyGetRewardTag
 
     player_options:
@@ -30,6 +30,7 @@ conversations:
         pointer: "tutorialStart"
       noIDont:
         text: "ไม่ตอนนี้ยังขี้เกียจ"
+        pointer: goodLuck
       lostBook:
         text: ฉันทำหนังสือหาย
         pointer: giveNewBook
